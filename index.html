@@ -428,12 +428,14 @@ button{font:inherit}
 .bio-link{color:var(--pink-deep);text-decoration:underline;text-decoration-color:rgba(0,191,255,.55);
   text-underline-offset:4px;transition:color .2s,text-decoration-color .2s}
 .bio-link:hover{color:var(--blue-deep);text-decoration-color:var(--pink)}
-.bloom{width:clamp(200px,25vw,350px);opacity:.95;user-select:none;align-self:center;
-filter:hue-rotate(170deg) saturate(1.5)}
+.bloom{width:clamp(200px,25vw,350px);opacity:.95;user-select:none;align-self:center;}
 @media (max-width:760px){
   .about{grid-template-columns:1fr}
-  .bloom{width:170px;justify-self:center}
+  .bloom{width:220px;justify-self:center}
 }
+
+/* danh sách "Plates": mỗi dòng là một thẻ bo góc */
+.plates{max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
 
 /* danh sách "Plates": mỗi dòng là một thẻ bo góc */
 .plates{max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
@@ -530,11 +532,12 @@ filter:hue-rotate(170deg) saturate(1.5)}
       <p class="bio" style="font-family: 'BienCuong', sans-serif;"> Các <a class="bio-link" href="#">HOT GIRL </a> của <a class="bio-link" href="#"> YOUNG TRAINING </a>, là những cá nhân năng động, bản lĩnh và luôn tràn đầy cảm hứng. Các bạn là mảnh ghép cốt lõi của câu lạc bộ, nơi suốt thời gian qua đã không ngừng nỗ lực kiến tạo những giá trị thực — từ những chặng đường bỡ ngỡ ban đầu cho đến lúc tự tin tỏa sáng rực rỡ, chứng minh rằng mỗi cô gái đều mang một sức mạnh phi thường. Vẻ đẹp của các bạn nằm ở sự giao thoa tuyệt vời đó: đủ mạnh mẽ để dấn thân, và đủ tinh tế để thấu hiểu. <a class="bio-link" href="#">Lời chúc 20/10 </a>này chính là một nửa còn lại của bức tranh ấy — một khoảnh khắc thanh xuân được ngắm nhìn thật chậm rãi, điểm xuyết bằng tình yêu và đôi chút màu sắc rực rỡ: những nụ cười tỏa nắng, những cái ôm ấm áp, và tháng năm rực rỡ của tuổi trẻ.</p>
     </div>
     <img crossorigin="anonymous" class="bloom" src="ytc.png" alt="" aria-hidden="true">
-  </section>
+  </section> <!-- Đây là thẻ đóng của phần Lời chúc (about) -->
 
+  <!-- Đường kẻ mờ tách riêng 2 phần (thêm vào nếu bị mất) -->
   <div class="rule short" aria-hidden="true"></div>
 
-  <section id="danhsacg" class="danhsach">
+  <section id="danhsach" class="plates">
     <p class="section-label">Danh sách</p>
     <ol class="plate-list" id="plateList"></ol>
   </section>
